@@ -1,0 +1,10 @@
+for i in {8..9}
+do
+for j in {0..9}
+do
+for k in {0..9}
+do
+    qdel -k 1236$i$j$k.nqs
+done
+done
+done

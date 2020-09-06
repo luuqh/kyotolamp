@@ -1,0 +1,15 @@
+rm nl.*
+cd data
+rm tempo.*
+for i in {0..2}
+do
+    rm *.g$i*
+for j in {1..9}
+do
+    rm *.p$i$j
+done
+done
+for j in {1..9}
+do
+    rm *.p$i0
+done

@@ -1,0 +1,33 @@
+#!/bin/sh
+# $Id: cntl 2011-7-6 luu $
+#
+# qsub script
+#
+# @$-q gh10056
+# @$-lP 1
+# @$-lp 1
+# @$-lm 32gb
+# @$-ls 30mb
+# @$-eo
+# @$-lT 1000:00:00
+#
+
+path=/LARGEHS02/gh10056/luu/fab/kl/lamp/lab
+fu99=$path/namelist
+EXEC=$path/a.out
+
+OMP_NUM_THREADS=1
+PARALLEL=$OMP_NUM_THREADS
+
+default=0
+
+echo "&domain" > $fu99
+echo "region=$default" >> $fu99
+echo "&end" >> $fu99
+
+export fu99
+mpiexec -n 1 $EXEC
+code=$?
+echo "$code"
+exit $code
+

@@ -1,0 +1,43 @@
+
+
+
+LAMP 
+
+[L]agrangian [A]nimations of [M]assive [P]articles
+
+History:
+
+2011/12/30: Change particle naming system from ddhhmmss to ddddhhmm to calculate more than 100 days
+2011/11/14: Add ability to trace particles "backward" in time direction
+2011/11/12: Debug a bug of reloading tidal current [load_flow]
+2011/11/11: Remove files for release particles [load_release, set_release], instead incorporate at [set/particles]
+2011/10/08: Update new steay flow data by In-san model
+2011/09/22: Add able to continous calculation of particles from previous data (to overcome HPC limited memory)
+2011/09/21: Rewind the tidal flow file instead of re-open it (to reduce possible memory consuming)
+2011/08/26: Add post/trajmis to calculate trajectory with faster speed
+2011/08/20: Increase memory to 32 GB (twice) to run longer time
+2011/07/14: Change folders to do more simulataneous/parallel groups of experiments
+2011/07/12: Add ability to start at selected tidal phase
+2011/02/13: Fix bug of mode_couple
+2011/02/06: Add capacity of input 2D velocity (to save space)
+2011/01/06: Correct volume transport error in load_particles (n=0->n=1)
+2010/12/08: Update if ix,iy,iz in p_packing and create post/traj/pfilter to save same ids
+2010/12/07: Correct bug in post/vox/poly
+2010/12/06: Correct bug in read integer*8 of marktp in post/vox, and bug in set/grid dz layers (cm->m)
+2010/12/03: Correct depth bug (cm->m) and desity difference (vs. set_particles density)
+2010/11/24: Applied better parameters of aam and vd
+2010/06/24: Init set/[updim] module to extrapolate 2D velocities to 3D velocities 
+2010/06/23: Fix bugs in [main] in writing save_particles & in set/particles integer*8 of cr array
+2010/06/22: Init post/[merge] module to merge particles in regions
+2010/06/21: Fix go shell file
+2010/06/14: Add automatically generate control file and send qsub 
+2010/06/12: Add capacity of dividing domain into multi-regions
+2010/06/04: Control files was add to submit into the HPC
+2010/03/01: Complete initization of Lagrangian model developed
+
+
+
+Quick Guide:
+
+- Change CNTL folder (path) to: /LARGEHS02/gh10056/luu/fab/kl/lamp/lab*
+- Change SRC/SET_PARAM experiment folder (d_xp) to: lab*

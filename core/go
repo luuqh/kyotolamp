@@ -1,0 +1,36 @@
+clear
+rm nl.*
+rm a.out
+cd src
+rm *.err
+rm *.lst
+rm *.o
+rm *.mod
+make
+rm *.err
+rm *.lst
+rm *.o
+rm *.mod
+cd ../data
+rm tempo.*
+cd ..
+for i in {1..39}
+do
+  for fl in cntl
+  do
+    rm -f $fl.$i
+    cp $fl $fl.$i
+    s1='s/default=0/default='
+    s2=$s1$i
+    s3=$s2'/g'
+    sed -i $s3 $fl.$i
+    s1='s/namelist/nl.'
+    s2=$s1$i
+    s3=$s2'/g'
+    sed -i $s3 $fl.$i
+    qsub $fl.$i -g gh10056
+    rm -f $fl.$i
+  done
+done
+echo "./a.out"
+echo "rm a.out"
