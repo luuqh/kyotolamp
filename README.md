@@ -1,10 +1,10 @@
 # KyotoLamp
 
-A Lagrangian model for simulating particles transport using random walks.
+A Lagrangian model for simulating particles transport using random walks developed by Hung Q. Luu in 2012.
 
 **Source code** 
 
-The model is developed using FORTRAN from scratch. It can be configured to run on High Performace Computer (HPC) using paralell processing. The source code of KyotoLamp is archived in [subfolder](https://github.com/luuqh/kyotolamp/blob/master/).
+The model is developed using FORTRAN from scratch. The source code of KyotoLamp is archived in [subfolder](https://github.com/luuqh/kyotolamp/blob/master/).
 
 - [Core](https://github.com/luuqh/kyotolamp/blob/master/core/): Main source codes of KyotoLamp, being used to simulate Lagrangian transports.
 - [Set](https://github.com/luuqh/kyotolamp/blob/master/set/): Supporting codes, being used to generate input data and settings for the main program.
