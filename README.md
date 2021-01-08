@@ -4,7 +4,7 @@ A Lagrangian model for simulating particles transport using random walks develop
 
 **Source code** 
 
-The model is developed using FORTRAN from scratch. The source code of KyotoLamp is archived in [subfolder](https://github.com/luuqh/kyotolamp/blob/master/).
+The model is developed using FORTRAN from scratch. The source code of KyotoLamp is archived in [subfolder](https://github.com/luuqh/kyotolamp/tree/master/).
 
 - [Core](https://github.com/luuqh/kyotolamp/blob/master/core/): Main source codes of KyotoLamp, being used to simulate Lagrangian transports.
 - [Set](https://github.com/luuqh/kyotolamp/blob/master/set/): Supporting codes, being used to generate input data and settings for the main program.
