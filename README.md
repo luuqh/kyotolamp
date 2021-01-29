@@ -1,6 +1,6 @@
 # KyotoLamp
 
-A Lagrangian model for simulating particles transport using random walks developed by Hung Q. Luu in 2012.
+A Lagrangian model for simulating particles transport using random walks developed by Hung Q. Luu in 2012. It was a generalized version of a radioactivity dispersion model developed by Takuya Kobayashi in 2006.
 
 **Source code** 
 
